@@ -194,7 +194,7 @@ class Sniffer:
 			else:
 				tabulator__.append([ap['count'], pull.GREEN+ap['essid']+pull.END, ap['pwr'], ap['auth'], ap['cipher'], \
 						ap['psk'], ap['channel'], ap['bssid'].upper()])
-		print "\n"+tabulate(tabulator__, headers=__HEADERS)+"\n"
+		print ("\n"+tabulate(tabulator__, headers=__HEADERS)+"\n")
 		os.kill(os.getpid(), SIGINT)
 
 class pmkid_GEN:
